@@ -3,15 +3,11 @@ pipeline{
     stages{
         stage('github'){
             steps{
-             echo 'hlww'   
+             git branch: 'master',url:'https://github.com/anam-tabassum64/simple-jenkins-demo.git'   
 
             }
         }
-        stage('docker'){
-            steps{
-                echo 'image'
-            }
-        }
+        
         
     }
 }
